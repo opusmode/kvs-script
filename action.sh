@@ -7,10 +7,10 @@ curl -O https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/
 curl -O https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/ooni_domains.lst
 curl -O https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/domains_all.lst
 #Merge section
-cat *.lst > total.lst
-cat *.txt > total.lst
+cat *.lst > total.list
+#cat *.txt > total.lst
 #Import section
-kvas import total.lst
+kvas import total.list
 #Clear section
 cd /tmp
 rm -rf import
